@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110415142258) do
+ActiveRecord::Schema.define(:version => 20110415151616) do
 
   create_table "billing_infos", :force => true do |t|
     t.string   "org_name"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(:version => 20110415142258) do
     t.integer  "num_donors"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "users_id"
+    t.integer  "fundusers_id"
   end
 
   create_table "fundusers", :force => true do |t|

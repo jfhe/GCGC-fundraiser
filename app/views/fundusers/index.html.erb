@@ -1,0 +1,23 @@
+<% @e = @events %>
+
+<h1>My profile: </h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @funduser.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @funduser.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @funduser.email %>
+</p>
+
+<%=render 'events/profile' %>
+
+<%= link_to 'Create a new event', new_event_path %>

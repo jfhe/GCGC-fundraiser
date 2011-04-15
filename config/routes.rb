@@ -3,6 +3,12 @@ Fundraiser::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  resources :events
+ 
+
+  match 'profile/' => 'fundusers#index'
+  match 'events/'  => 'fundusers#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

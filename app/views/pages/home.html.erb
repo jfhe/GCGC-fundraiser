@@ -1,0 +1,14 @@
+<%if funduser_signed_in?%>
+<p>
+  Welcome back, <%= current_funduser.email %>!
+</p>
+<% else %>
+<p>
+    Welcome to the GiveChangeGetChange home page.
+  </p>
+  <p>
+    If you already have an account with us,
+  <%= link_to "Sign in here", new_funduser_session_path %>.  Otherwise,
+  </p>
+<%= link_to "Sign up now!", new_funduser_registration_path, :class =>"signup_button round" %>
+<% end %>
